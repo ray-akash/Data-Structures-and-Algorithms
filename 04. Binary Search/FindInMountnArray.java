@@ -22,12 +22,10 @@ class Solution {
             return index;
         else
             // Applying Binary search from peakIndex index to last index
-            index = orderAgnosticBinarySearch(peakIndex, mountainArr.length()-1, target, mountainArr);
-            if(index != 1)
-                return index;
-        return -1;
+            return orderAgnosticBinarySearch(peakIndex, mountainArr.length()-1, target, mountainArr);
     }
 
+    // Order Agnostic Binary Search does the binary search on sorted array regardless of it being ascending or descending.
     public int orderAgnosticBinarySearch(int start, int end, int target, MountainArray mountainArr){
         boolean isDesc = mountainArr.get(start) > mountainArr.get(end);
 
