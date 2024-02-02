@@ -33,7 +33,7 @@ class Solution {
                 return mid-1;
             if(arr[start] >= arr[mid])
                 end = mid-1;
-            if(arr[start] < arr[mid])
+            else //if(arr[start] < arr[mid])
                 start = mid+1;
         }
         // In case the array is not rotated, -1 will be returned
