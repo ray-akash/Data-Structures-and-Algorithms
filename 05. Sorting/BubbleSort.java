@@ -14,14 +14,19 @@ public class BubbleSort {
     }
 
     static void bubbleSort(int[] arr){
+        boolean swap;
         for(int i=0; i<arr.length; i++){
+            swap = false;
             for(int j=0; j<arr.length-i; j++){
                 if(j+1<arr.length && arr[j] > arr[j+1]){
                     arr[j] = arr[j]+arr[j+1];
                     arr[j+1] = arr[j] - arr[j+1];
                     arr[j] = arr[j] - arr[j+1];
+                    swap = true;
                 }
             }
+            if(!swap)
+                break;
         }
     }
 }
