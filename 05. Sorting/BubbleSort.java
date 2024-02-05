@@ -25,6 +25,7 @@ public class BubbleSort {
                     swap = true;
                 }
             }
+            // In case no swapping happens i.e. array is already sorted, loop will break after only one iteration.
             if(!swap)
                 break;
         }
