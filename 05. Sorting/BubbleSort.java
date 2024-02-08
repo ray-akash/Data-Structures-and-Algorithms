@@ -8,10 +8,10 @@ package Sorting;
 import java.util.Arrays;
 public class BubbleSort {
     public static void main(String[] args){
-        int[] arr = {3, 3, 4, 4, 7, 0, 1, 4, 6, 5, 5, 4, 2};
-        System.out.println(Arrays.toString(arr));        // [3, 3, 4, 4, 7, 0, 1, 4, 6, 5, 5, 4, 2]
+        int[] arr = {3, 7, 3, 4, 4, 6, 7, -7, 7, 0, 0, 1, 4, 3, 6, 5, -5, 4, 2};
+        System.out.println(Arrays.toString(arr));    // [3, 7, 3, 4, 4, 6, 7, -7, 7, 0, 0, 1, 4, 3, 6, 5, -5, 4, 2]
         bubbleSort(arr);
-        System.out.println(Arrays.toString(sortedArr));  // [0, 1, 2, 3, 3, 4, 4, 4, 4, 5, 5, 6, 7]
+        System.out.println(Arrays.toString(arr));    // [-7, -5, 0, 0, 1, 2, 3, 3, 3, 4, 4, 4, 4, 5, 6, 6, 7, 7, 7]
     }
 
     static void bubbleSort(int[] arr){
